@@ -8,6 +8,12 @@ namespace senla_introductory_exam
 {
     class Program
     {
+		/* Хотелось бы увидеть побольше подобных практических задач :)
+		 * Хорошо помогает развлечься в свободное время
+		 * @ Ходаков Артём - ГрГУ УИР-171
+		 * +375 (25) 933-48-52 / altair999z@gmail.com / altairka.github.io
+         */
+
 		static List<iTask> Tasks = new List<iTask>();
 
         static void Main(string[] args)

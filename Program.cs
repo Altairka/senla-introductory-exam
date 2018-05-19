@@ -29,8 +29,9 @@ namespace senla_introductory_exam
 				Tasks.Add((iTask)Activator.CreateInstance(type));
 			}
 
+			Tasks = Tasks.OrderBy(x => x.ID).ToList();
+
 			Console.WriteLine("Available tasks:");
-			Int32 i = 0;
 			foreach(iTask task in Tasks){
 				Console.WriteLine($" > [{task.ID}] - {task.Name}");
 			}

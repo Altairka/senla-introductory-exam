@@ -22,10 +22,28 @@ namespace senlaintroductoryexam.Tasks
 				Double c = Double.Parse(Console.ReadLine());
 
                 // TO DO
+               
+				if(a <= 0 || b <= 0 || c <= 0){
+					Console.WriteLine("Funny joke...");
+					return;
+				}
+
+				Boolean isOk = false;
+
+				Check(a, b, c, ref isOk);
+				Check(b, c, a, ref isOk);
+				Check(c, b, a, ref isOk);
+
+				Console.WriteLine("Result: " + isOk);
 			}
 			catch{
 				Console.WriteLine("There shouldn't be exceptions here..");
 			}
+		}
+
+		void Check(Double a, Double b, Double c, ref Boolean isOk){
+			if ((a * a + b * b) == c * c)
+				isOk = true;
 		}
 	}
 }

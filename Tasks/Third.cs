@@ -5,6 +5,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Third : iTask
 	{
+		public Int32 ID { get; } = 3;
+
 		public String Name { get; } = "Is Palindrome";
 
 		public void Invoke()

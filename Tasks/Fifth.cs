@@ -6,6 +6,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Fifth : iTask
 	{
+		public Int32 ID { get; } = 5;
+
 		public String Name { get; } = "Words counter";
 
 		public void Invoke()

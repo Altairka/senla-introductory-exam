@@ -32,7 +32,7 @@ namespace senla_introductory_exam
 			Console.WriteLine("Available tasks:");
 			Int32 i = 0;
 			foreach(iTask task in Tasks){
-				Console.WriteLine($" > [{i++}] - {task.Name}");
+				Console.WriteLine($" > [{task.ID}] - {task.Name}");
 			}
             
 			Console.WriteLine("Enter task index to invoke: ");
@@ -48,7 +48,7 @@ namespace senla_introductory_exam
 
 					Int32 Index = Int32.Parse(Command);
 
-					iTask Task = Tasks[Index];
+					iTask Task = Tasks.First(x => x.ID == Index);
 
 					Task.Invoke();
 				}

@@ -3,6 +3,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Sixth : iTask
 	{
+		public Int32 ID { get; } = 6;
+
 		public String Name { get; } = "Is right triangle exists";
 
 		public void Invoke()

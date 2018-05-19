@@ -3,6 +3,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Fourth : iTask
 	{
+		public Int32 ID { get; } = 4;
+
 		public String Name { get; } = "Splitting & sorting a sentence";
 
 		public void Invoke()

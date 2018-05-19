@@ -3,6 +3,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Nines : iTask
 	{
+		public Int32 ID { get; } = 9;
+
 		public String Name => "Number sequence";
 
 		public void Invoke()

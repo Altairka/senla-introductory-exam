@@ -5,6 +5,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Eights : iTask
 	{
+		public Int32 ID { get; } = 8;
+
 		public String Name => "Palindromic numbers";
 
 		public void Invoke()

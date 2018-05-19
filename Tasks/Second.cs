@@ -3,6 +3,7 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Second : iTask
     {
+		public Int32 ID { get; } = 2;
 
 		public String Name { get; } = "Operations with numbers";
 

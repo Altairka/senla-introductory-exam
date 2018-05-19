@@ -8,6 +8,8 @@ namespace senlaintroductoryexam.Tasks
 	{
 		// Шикарное задание, если его чуть-чуть усложнить :D
 
+		public Int32 ID { get; } = 10;
+
 		public String Name => "Numbers combination";
 
 		Char[] Numbers;

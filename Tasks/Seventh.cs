@@ -5,6 +5,8 @@ namespace senlaintroductoryexam.Tasks
 {
 	public class Seventh : iTask
 	{
+		public Int32 ID { get; } = 7;
+
 		public String Name => "Min & Max in array";
 
 		public void Invoke()
